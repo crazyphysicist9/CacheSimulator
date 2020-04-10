@@ -1,8 +1,11 @@
 
+The simulator takes the following command-line arguments:
+Usage: ./csim -s <s> -E <E> -b <b> -t <tracefile>
+• -s <s>: Number of set index bits (S = 2s is the number of sets) 
+• -E <E>: Associativity (number of lines per set)
+• -b <b>: Number of block bits (B = 2b is the block size)
+• -t <tracefile>: Name of the valgrind trace to replay
 
-![alt text](https://github.com/crazyphysicist9/CacheSimulator/blob/master/csim%20instuctions.png)
-<p align="center">
-  <img src="https://github.com/crazyphysicist9/CacheSimulator/blob/master/csim%20instuctions.png" width="350" title="hover text">
-</p>
 
-Sample run: ./csim-ref -v -s 4 -E 1 -b 4 -t traces/yi.trace
+Sample run: ./csim -v -s 4 -E 1 -b 4 -t traces/yi.trace
+Output: hits:4 misses:5 evictions:3 dirty_evicted:32 dirty_active:16 double_refs:4
