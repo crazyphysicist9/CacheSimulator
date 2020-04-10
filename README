@@ -1,6 +1,8 @@
 
 
 ![alt text](https://raw.githubusercontent.com/crazyphysicist9/CacheSimulator/blob/master/csim%20instuctions.png)
-
+<p align="center">
+  <img src="crazyphysicist9/CacheSimulator/blob/master/csim%20instuctions.png" width="350" title="hover text">
+</p>
 
 Sample run: ./csim-ref -v -s 4 -E 1 -b 4 -t traces/yi.trace
